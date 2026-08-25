@@ -1,0 +1,14 @@
+name: SecondWind
+version: '${version}'
+main: dev.secondwind.SecondWindPlugin
+api-version: '1.21'
+description: Downed state instead of instant death - crawl, bleed out, or get revived by a teammate.
+commands:
+  secondwind:
+    description: SecondWind admin/give-up command
+    aliases: [sw]
+permissions:
+  secondwind.revive:
+    default: true
+  secondwind.reload:
+    default: op

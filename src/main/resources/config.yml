@@ -1,0 +1,26 @@
+# SecondWind configuration
+# Seconds until a downed player bleeds out and dies
+bleed-seconds: 30
+# Seconds a rescuer must sneak next to a downed player to revive them
+revive-seconds: 4
+# Max distance for reviving (blocks)
+revive-range: 3.0
+# Health after being downed (half-hearts x2; 4.0 = 2 hearts)
+downed-health: 4.0
+# Health restored after a successful revive
+revived-health: 8.0
+# Downed players glow so rescuers can find them
+glowing: true
+# Attackers can finish off downed players (hit them once)
+allow-execute: true
+# Players who disconnect while downed die
+die-on-quit: true
+# Worlds where SecondWind is disabled
+disabled-worlds: []
+messages:
+  downed-title: '<red>You are downed!</red>'
+  downed-subtitle: '<gray>A teammate can revive you — {seconds}s left</gray>'
+  reviving: '<yellow>Reviving {player}… {progress}%</yellow>'
+  revived: '<green>{player} revived you!</green>'
+  revived-rescuer: '<green>You revived {player}!</green>'
+  bled-out: '<red>{player} bled out.</red>'
